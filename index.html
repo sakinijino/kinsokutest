@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Simplified Chinese Line Breaking Rules Test</title>
+  <style>
+    body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;}h1,h2,h3,h4,h5,h6{font-size:100%;}address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}small{font-size:12px;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:100%;}table{border-collapse:collapse;border-spacing:0;}
+    body {background: #e2e6e9; font: normal 16px Verdana, Arial, Sans-Serif; text-align: left; }
+
+    div#container {max-width:550px; margin: 30px auto; background: #fff; padding: 40px 75px 80px;}
+    div#container h1 {font-size: 24px; line-height:200%; margin: 10px 0;}
+    div#container h2 {font-size: 20px; line-height:200%; margin: 10px 0;}
+    div#container p {line-height:200%; text-align:justify; border:solid 1px #aaa;}
+    div#container p.intro {border:none;}
+    div#container span.mark{color: red;}
+  </style>
+  <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="underscore-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="backbone-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="kinsoku.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <div id="container">
+    <h1>浏览器简体中文断行测试</h1>
+    <p class="intro">测试浏览器中简体中文标点避头尾、两端对齐——<a href="http://en.wikipedia.org/wiki/Line_breaking_rules_in_East_Asian_language" target="_blank">规则引用自维基百科</a>。</p>
+  </div>
+  <!--Templates-->
+  <script type="text/template" id="paragraph-template">
+    <p><%= content%></p>
+    <br/>
+  </script>
+</body>
+</html>
